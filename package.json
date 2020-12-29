@@ -6,12 +6,20 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "@wdio/cli": "^6.10.11",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
     "react-scripts": "4.0.1",
+    "redux": "^4.0.5",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "selenium-setup": "selenium-standalone install",
+    "selenium-start": "selenium-standalone start",
+    "e2e-tests": "wdio wdio.conf.js",
+    "e2e-tests-watch": "wdio wdio.conf.js --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +42,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^6.10.13",
+    "@wdio/mocha-framework": "^6.10.11",
+    "@wdio/spec-reporter": "^6.10.6",
+    "@wdio/sync": "^6.10.11",
+    "chai": "^4.2.0",
+    "chromedriver": "^87.0.4",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.16.0",
+    "react-test-renderer": "^17.0.1",
+    "selenium-standalone": "^6.23.0",
+    "wdio-chromedriver-service": "^6.0.4",
+    "webdriverio": "^6.10.11"
   }
 }
