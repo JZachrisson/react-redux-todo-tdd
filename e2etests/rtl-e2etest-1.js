@@ -7,4 +7,14 @@ describe('TodoList App', () => {
 
     expect(actualTitle).to.eql('Todo List');
   });
+
+  it('Should allow me to create a Todo', () => {
+    const todoText = 'Get better at testing';
+    browser.url('http://localhost:3000/');
+    browser.$('.todo-input').setValue(todoText);
+    browser.elementClick('.todo-submit');
+    const actual = browser.$('.todo-text').getText();
+
+    expect(actual).to.equal(todoText);
+  });
 });
