@@ -52,6 +52,7 @@
     "chromedriver": "^87.0.4",
     "enzyme": "^3.11.0",
     "eslint": "^7.16.0",
+    "prop-types": "^15.7.2",
     "react-test-renderer": "^17.0.1",
     "selenium-standalone": "^6.23.0",
     "wdio-chromedriver-service": "^6.0.4",
